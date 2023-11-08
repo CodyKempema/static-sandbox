@@ -29,8 +29,26 @@
 	height: 100%;
 }
 .inner-content {
-	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+.headline {
+	color: hsl(50, 80%, 60%);
 	text-align: center;
 	font-family: "Pinyon Script";
-	font-size: 3rem;
+	font-size: 6rem;
+}
+.btn-outlined {
+	border: 4px solid white;
+	padding: 1rem;
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 2rem;
+	cursor: pointer;
+	color: white;
+}
+.btn-outlined:hover {
+	background-color: rgba(0, 0, 0, 0.5);
 }
