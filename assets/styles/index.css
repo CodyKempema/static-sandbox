@@ -43,6 +43,7 @@
 }
 .btn-outlined {
 	border: 4px solid white;
+	border-radius: 10px;
 	padding: 1rem;
 	background-color: rgba(0, 0, 0, 0.1);
 	font-size: 2rem;
