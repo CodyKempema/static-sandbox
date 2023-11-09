@@ -3,11 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/assets/styles/globals.css" />
+		<script src="jquery.js"></script>
+		<script>
+			$(function () {
+				$("#header").load("/components/header.html");
+				$("#footer").load("components/footer.html");
+			});
+		</script>
+		<link rel="stylesheet" href="/assets/styles/index.css" />
 		<title>Static Sandbox</title>
 	</head>
 	<body>
-		<?php include "/components/header.html" ?>
+		<div id="header"></div>
 		<main>
 			<h1>Hello World!</h1>
 			<nav>
@@ -27,6 +34,7 @@
 			<p>This is a test.</p>
 			<p><a href="/blog/test.html">New Page</a></p>
 		</main>
+		<div id="footer"></div>
 		<script src="assets/js/language.js"></script>
 	</body>
 </html>
