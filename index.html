@@ -3,22 +3,28 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/assets/styles/index.css" />
 		<link rel="stylesheet" href="/assets/styles/globals.css" />
 		<title>Static Sandbox</title>
 	</head>
 	<body>
-		<div class="jumbotron-container">
-			<div class="jumbotron-bg">
-				<div class="jumbotron-cover">
-					<div class="content-container">
-						<div class="inner-content">
-							<h1 class="headline">Computers Are Dumb</h1>
-							<button class="btn-outlined">See Why</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<main>
+			<h1>Hello World!</h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html" onclick="changeLanguage('en')"
+							>English</a
+						>
+					</li>
+					<li>
+						<a href="index.html" onclick="changeLanguage('es')"
+							>Español</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<p>This is a test.</p>
+		</main>
+		<script src="assets/js/language.js"></script>
 	</body>
 </html>
